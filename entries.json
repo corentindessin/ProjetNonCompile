@@ -1,0 +1,248 @@
+{
+  "nextEntryId": 58,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Utils",
+      "type": null,
+      "children": [
+        {
+          "id": "2",
+          "name": "Fade",
+          "type": null,
+          "children": [
+            {
+              "id": "3",
+              "name": "Fade Manager",
+              "type": "script"
+            },
+            {
+              "id": "4",
+              "name": "Black Screen",
+              "type": "sprite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Menus",
+      "type": null,
+      "children": [
+        {
+          "id": "6",
+          "name": "Font",
+          "type": "font"
+        },
+        {
+          "id": "7",
+          "name": "Scene",
+          "type": "scene"
+        },
+        {
+          "id": "8",
+          "name": "Behavior",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "In-Game",
+      "type": null,
+      "children": [
+        {
+          "id": "10",
+          "name": "Scene",
+          "type": "scene"
+        },
+        {
+          "id": "36",
+          "name": "Game",
+          "type": "script"
+        },
+        {
+          "id": "31",
+          "name": "Camera",
+          "type": null,
+          "children": [
+            {
+              "id": "32",
+              "name": "Prefab",
+              "type": "scene"
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "name": "Interactions",
+          "type": null,
+          "children": [
+            {
+              "id": "33",
+              "name": "Teleport",
+              "type": null,
+              "children": [
+                {
+                  "id": "34",
+                  "name": "Teleport",
+                  "type": "script"
+                },
+                {
+                  "id": "45",
+                  "name": "Teleport2",
+                  "type": "script"
+                },
+                {
+                  "id": "37",
+                  "name": "Die",
+                  "type": "script"
+                },
+                {
+                  "id": "44",
+                  "name": "Die2",
+                  "type": "script"
+                },
+                {
+                  "id": "35",
+                  "name": "Sprite",
+                  "type": "sprite"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "name": "Maps",
+          "type": null,
+          "children": [
+            {
+              "id": "16",
+              "name": "Global",
+              "type": null,
+              "children": [
+                {
+                  "id": "17",
+                  "name": "Background",
+                  "type": "sprite"
+                },
+                {
+                  "id": "18",
+                  "name": "Tile Set",
+                  "type": "tileSet"
+                },
+                {
+                  "id": "19",
+                  "name": "Map1",
+                  "type": "tileMap"
+                },
+                {
+                  "id": "51",
+                  "name": "Map2",
+                  "type": "tileMap"
+                },
+                {
+                  "id": "40",
+                  "name": "Forest",
+                  "type": "sprite"
+                },
+                {
+                  "id": "43",
+                  "name": "Cave",
+                  "type": "sprite"
+                }
+              ]
+            },
+            {
+              "id": "20",
+              "name": "Niveau",
+              "type": null,
+              "children": [
+                {
+                  "id": "21",
+                  "name": "NIV1",
+                  "type": "scene"
+                },
+                {
+                  "id": "52",
+                  "name": "NIV2",
+                  "type": "scene"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "22",
+          "name": "Entities",
+          "type": null,
+          "children": [
+            {
+              "id": "23",
+              "name": "Player",
+              "type": null,
+              "children": [
+                {
+                  "id": "24",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "25",
+                  "name": "Player",
+                  "type": "sprite"
+                },
+                {
+                  "id": "26",
+                  "name": "Behavior",
+                  "type": "script"
+                }
+              ]
+            },
+            {
+              "id": "27",
+              "name": "Characters",
+              "type": null,
+              "children": [
+                {
+                  "id": "28",
+                  "name": "NPC1",
+                  "type": "sprite"
+                },
+                {
+                  "id": "29",
+                  "name": "NPC2",
+                  "type": "sprite"
+                },
+                {
+                  "id": "30",
+                  "name": "NPC3",
+                  "type": "sprite"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "54",
+      "name": "End",
+      "type": null,
+      "children": [
+        {
+          "id": "56",
+          "name": "Scene",
+          "type": "scene"
+        },
+        {
+          "id": "57",
+          "name": "Behavior",
+          "type": "script"
+        }
+      ]
+    }
+  ]
+}
