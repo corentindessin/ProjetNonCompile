@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 58,
+  "nextEntryId": 61,
   "nodes": [
     {
       "id": "0",
@@ -22,6 +22,16 @@
               "type": "sprite"
             }
           ]
+        },
+        {
+          "id": "59",
+          "name": "Singleton",
+          "type": "script"
+        },
+        {
+          "id": "60",
+          "name": "Command",
+          "type": "script"
         }
       ]
     },

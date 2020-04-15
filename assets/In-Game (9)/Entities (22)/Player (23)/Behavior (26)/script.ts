@@ -11,6 +11,7 @@ class PlayerBehavior extends Sup.Behavior {
   platformBodies: Sup.ArcadePhysics2D.Body[] = [];
 
   awake() {
+    Command.add(this);
     
     Game.playerBehavior = this;
     
@@ -19,6 +20,16 @@ class PlayerBehavior extends Sup.Behavior {
     for (let solidActor of solidActors) this.solidBodies.push(solidActor.arcadeBody2D);
     // let platformActors = Sup.getActor("Platforms").getChildren();
     // for (let platformActor of platformActors) this.platformBodies.push(platformActor.arcadeBody2D);
+  }
+  
+  onDestroy() {
+    Command.remove(this);
+  }
+  
+  private myevent: any = {};
+  
+  setValue(evt: string, val: boolean) {
+    this.myevent[evt] = val;
   }
 
   update() {
@@ -54,32 +65,37 @@ class PlayerBehavior extends Sup.Behavior {
     }
 
     // We override the `.x` component based on the player's input
-    if (Sup.Input.isKeyDown("LEFT")) {
+    if (this.myevent.left) {
       velocity.x = -this.speed;
       // When going left, we have to flip the sprite
       this.actor.spriteRenderer.setHorizontalFlip(true);
-    } else if (Sup.Input.isKeyDown("RIGHT")) {
+    } else if (this.myevent.right) {
       velocity.x = this.speed;
       // When going right, we cancel the flip
       this.actor.spriteRenderer.setHorizontalFlip(false);
-    } else velocity.x = 0;
+    } else {velocity.x = 0;}
 
     // If the player is on the ground and wants to jump,
     // we update the `.y` component accordingly
     let touchBottom = touchSolids || touchPlatforms;
     if (touchBottom) {
-      if (Sup.Input.wasKeyJustPressed("UP")) {
+      if (this.myevent.up) {
+        this.myevent.up = false;
         velocity.y = this.jumpSpeed;
         this.actor.spriteRenderer.setAnimation("Jump");
       } else {
         // There, we should play either 'Idle' or 'Run' depending on the horizontal speed
-        if (velocity.x === 0) this.actor.spriteRenderer.setAnimation("Idle");
-        else this.actor.spriteRenderer.setAnimation("Run");
+        if (velocity.x === 0)
+          this.actor.spriteRenderer.setAnimation("Idle");
+        else
+          this.actor.spriteRenderer.setAnimation("Run");
       }
     } else {
       // There, we should play either 'Jump' or 'Fall' depending on the vertical speed
-      if (velocity.y >= 0) this.actor.spriteRenderer.setAnimation("Jump");
-      else this.actor.spriteRenderer.setAnimation("Fall");
+      if (velocity.y >= 0)
+        this.actor.spriteRenderer.setAnimation("Jump");
+      else
+        this.actor.spriteRenderer.setAnimation("Fall");
     }
 
     // Finally, we apply the velocity back to the ArcadePhysics body

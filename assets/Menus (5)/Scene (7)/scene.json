@@ -99,47 +99,6 @@
       "prefab": null
     },
     {
-      "id": "2",
-      "name": "Intro Text",
-      "children": [],
-      "components": [
-        {
-          "type": "TextRenderer",
-          "config": {
-            "formatVersion": 2,
-            "fontAssetId": "6",
-            "text": "press enter",
-            "alignment": "center",
-            "verticalAlignment": "center",
-            "size": null,
-            "color": null,
-            "overrideOpacity": false,
-            "opacity": null
-          },
-          "id": "0"
-        }
-      ],
-      "position": {
-        "x": 0,
-        "y": -8,
-        "z": 7
-      },
-      "orientation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "visible": true,
-      "layer": 0,
-      "prefab": null
-    },
-    {
       "id": "3",
       "name": "Title",
       "children": [],
@@ -175,6 +134,129 @@
         "x": 1,
         "y": 1,
         "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "4",
+      "name": "PAD",
+      "children": [],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "6",
+            "text": "Pad:",
+            "alignment": "right",
+            "verticalAlignment": "center",
+            "size": 10,
+            "color": "fe0b0b",
+            "overrideOpacity": false,
+            "opacity": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -7,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.7,
+        "y": 0.7,
+        "z": 0.7
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "Inputbox",
+      "children": [],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "6",
+            "text": "entrer l'identifiant",
+            "alignment": "left",
+            "verticalAlignment": "center",
+            "size": 8,
+            "color": null,
+            "overrideOpacity": true,
+            "opacity": 0.89
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -7,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.7,
+        "y": 0.7,
+        "z": 0.7
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "2",
+      "name": "TextBox",
+      "children": [],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "6",
+            "text": "et appuyer sur entrer",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": null,
+            "color": "ff0000",
+            "overrideOpacity": false,
+            "opacity": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": -8,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.7,
+        "y": 0.7,
+        "z": 0.7
       },
       "visible": true,
       "layer": 0,
